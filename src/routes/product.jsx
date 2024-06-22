@@ -1,5 +1,8 @@
 import React from 'react'
+import { useDispatch } from 'react-redux';
 import { useLoaderData } from 'react-router-dom';
+import { addItemToCart } from '../features/features/cart/cartSlice';
+
 
 
 export async function loader({params}) {
@@ -10,6 +13,7 @@ export async function loader({params}) {
 
 function Product(props) {
     const {product} = useLoaderData()
+    const dispatch = useDispatch()
 
   return (
     <main>
@@ -20,7 +24,9 @@ function Product(props) {
             <h2>{product.title}</h2>
             <p>{product.description}</p>
             <span> &#8377;{product.price}</span>
-            <button>Add to Cart</button>
+            <button onClick={() =>{
+              dispatch(addItemToCart(product))
+            }}>Add to Cart</button>
 
         </div>
         </section>

@@ -175,3 +175,110 @@ form input{
   margin-right: auto;
   padding-top: 2rem;
 }
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-item img {
+  width: 50px; /* Small image size */
+  height: 50px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.cart-item .item-details {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.cart-item .item-name {
+  flex: 2;
+  font-size: 1em;
+  margin: 0;
+}
+
+.cart-item .item-price {
+  flex: 1;
+  font-size: 1em;
+  color: #555;
+  text-align: right;
+}
+
+.cart-item .quantity-controls {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.cart-item .quantity-controls button {
+  background-color: skyblue;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cart-item .quantity-controls button:hover {
+  color: black;
+}
+
+.cart-item .quantity-controls span {
+  margin: 0 10px;
+  font-size: 1em;
+}
+
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.cart-items {
+  flex: 2;
+  padding-right: 20px;
+}
+
+.price-details {
+  flex: 1;
+  padding-left: 20px;
+  border-left: 1px solid #ccc;
+}
+
+.cart-items-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-items-section h2 {
+  margin-bottom: 10px;
+}
+
+.price-section {
+  margin-top: 20px;
+}
+
+.price-section h2 {
+  margin-bottom: 10px;
+}
+
+.price-section div {
+  margin-bottom: 10px;
+}
+
+.price-section button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.price-section button:hover {
+  background-color: #0056b3;
+}
+
